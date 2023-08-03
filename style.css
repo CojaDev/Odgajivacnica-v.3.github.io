@@ -34,6 +34,7 @@ scroll-behavior: smooth;
     scroll-snap-align: center;
 }
 #hero{
+  
     scroll-snap-align: center;
     background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/2.jpg);
     background-position: center;
@@ -77,45 +78,240 @@ scroll-behavior: smooth;
    
 }
 
+#papagaji{
+    scroll-snap-align: center;
+}
+
+.papagaji{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.papagaji::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0,0,0,0.438));
+    position: absolute;
+    top: 0;
+    right:0%;
+    transition: all 1.2s ease;
+}
+.papagaji:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/2.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.papagaji h5, .papagaji p,.papagaji:hover .iconbox{
+    transition: all 0.9s ease;
+}
+.papagaji:hover h5, .papagaji:hover p{
+    color: white;
+}
+
+.papagaji:hover .iconbox{
+    background:linear-gradient(rgba(0, 0, 0, 0.907),rgba(0,0,0,0.738));
+    color: white;
+}
+
+.papagaji {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .papagaji .iconbox {
+    flex: 0 0 auto;
+    /* Postavljanje ikone na vrh kartice */
+  }
+  
+  .papagaji h5, .papagaji p {
+    flex: 1 1 auto;
+    /* Omogućava da se naslov i tekst prilagode visini kartice */
+  }
+  
+  .papagaji:hover .iconbox {
+    background: linear-gradient(rgba(0, 0, 0, 0.907), rgba(0, 0, 0, 0.738));
+    color: white;
+  }
+
+.pevajuci:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.307),rgba(0,0,0,0.238)),url(slike/papagaji/pev4.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.ninfe:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/papagaji/nin.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.kozice:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/papagaji/koza.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.crvenokrili:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/papagaji/crveni.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.tigrice:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/papagaji/tig.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.roze:hover::after{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.507),rgba(0,0,0,0.438)),url(slike/papagaji/roze.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
 
 
+#counter{ 
+    background:linear-gradient(rgba(0,0,0,0.707),rgba(0,0,0,0.638)),url(slike/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.zelena{
+    color: #96fa00;
+}
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+    transition: 0.6s ease;
+    width: 100%;
+}
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.06);
+}
+
+.portfolio-item .iconbox{
+    color: black;
+    background: #99ff01;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    transition: all 0.7s ease;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 38px;
+}
+.portfolio-item:hover .iconbox{
+    opacity: 1;
+}
+#galerija{
+    scroll-snap-align: center;
+}
+
+#kontakt{
+    scroll-snap-align: center;
+    position: relative;
+    z-index: 2;
+}
+#kontakt::after{
+    content: "";
+    width:100%;
+    height: 70%;
+    background:linear-gradient(rgba(0,0,0,0.707),rgba(0,0,0,0.638)),url(slike/3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+#kontakt .form-control{
+    border-radius: 0%;
+}
+#kontakt .form-control:focus{
+    box-shadow: 0px 0px 6px#8fee01;
+    border-color: #8fee01;
+}
+#kontakt textarea{
+    resize: none;
+}
 
 
+footer li,
+footer p,
+footer a{
+    color: rgba(255, 255, 255,0.7);
+    text-decoration: none;
+}
 
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer .line{
+    width: 40px;
+    height: 4px;
+    background-color: #8fee01;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
 
+footer{
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.footer-top{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255,0.7);
+}
+.footer-bottom{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255,255,255,0.1);
+}
+.social-icons a:hover {
+    background-color: rgb(255,255,255,0.3);  
+}
 
 
 
