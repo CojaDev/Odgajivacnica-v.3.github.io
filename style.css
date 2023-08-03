@@ -6,6 +6,9 @@
 html{
 scroll-behavior: smooth;
 }
+body{
+    transition: all 1s ease;
+}
 
 .lista{
     font-size: 1.1rem;
@@ -26,6 +29,7 @@ scroll-behavior: smooth;
     background-color:#8fee01  ;
 }
 .main-wrapper {
+    
     height: 100vh;
     overflow: auto;
     scroll-snap-type: y mandatory;
@@ -312,8 +316,6 @@ footer{
 .social-icons a:hover {
     background-color: rgb(255,255,255,0.3);  
 }
-
-
 
 
 

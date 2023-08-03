@@ -11,10 +11,11 @@
     <link href="slike/1.png"rel="shortcut icon">
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="bg-light">
+<body class="bg-light" data-bs-spy="scroll" data-bs-target=".navbar">
     
-      <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
+      <nav data-aos="fade-down" class="navbar navbar-expand-lg bg-light shadow fixed-top">
           <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="slike/logocrni.png" alt="logo" width="150" height="44">
@@ -46,13 +47,13 @@
 
   <div class="mainwrapper">
 
-    <section id="hero"class="min-vh-100 d-flex align-items-center text-center hero">
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center hero">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="text-uppercase fw-bold display-2 text-white">Otkrijte lepotu papagaja u našoj odgajivačnici</h1>
-            <h5 class="text-white" >Naša odgajivačnica posvećena je ljubavi i brizi prema ovim prelepim stvorenjima. Uzgajamo različite vrste papagaja s posebnom pažnjom prema njihovom rastu i razvoju.</h5>
-            <div>
+            <h1 data-aos="fade-right" class="text-uppercase fw-bold display-2 text-white">Otkrijte lepotu papagaja u našoj odgajivačnici</h1>
+            <h5 class="text-white" data-aos="fade-right" >Naša odgajivačnica posvećena je ljubavi i brizi prema ovim prelepim stvorenjima. Uzgajamo različite vrste papagaja s posebnom pažnjom prema njihovom rastu i razvoju.</h5>
+            <div data-aos="fade-right">
               <a href="#kontakt" class="btn btn-brand text-black me-1 mt-2 ">Kontaktiraj Nas</a>
               <a href="#papagaji" class="btn btn-light ms-2 mt-2">Upoznajte naše papagaje</a>
             </div>
@@ -66,25 +67,25 @@
     <div class="row">
         <div class="col-12">
           <div class="section-title text-center">
-            <h1 class="display-4 fw-semibold">O Nama</h1>
-            <div class="line"></div>
-            <p>Naša strast prema papagajima nas je inspirisala da stvorimo mesto gde papagaji mogu biti srećni i zdravi.</p>
+            <h1 data-aos="fade-down" data-aos-delay="70" class="display-4 fw-semibold">O Nama</h1>
+            <div data-aos="fade-down" data-aos-delay="70" class="line"></div>
+            <p data-aos="fade-down" data-aos-delay="70">Naša strast prema papagajima nas je inspirisala da stvorimo mesto gde papagaji mogu biti srećni i zdravi.</p>
           </div>
         </div>
     </div>
 
-    <div class="row justify-content-between align-items-center">
+    <div class="row justify-content-between align-items-center" >
       <div class="col-lg-6 mt-3 ">
-        <img src="slike/tata2.png" draggable="false" alt="">
+        <img  data-aos="fade-right" data-aos-delay="120" src="slike/tata2.png" draggable="false" alt="">
       </div>
-    <div class="col-lg-5 mt-1">
+    <div class="col-lg-5 mt-1"data-aos="fade-left" data-aos-delay="120" >
       <h1>O nasoj odgajivačnici</h1>
       <p class="mt-2 mb-4">Naša odgajivačnica posvećena je uzgoju i pružanju najbolje moguće brige za različite vrste papagaja.
         Naš stručni tim se brine o svakom pernatom stanovniku s ljubavlju i pažnjom kako bi im osigurali srećan
         i zdrav život.</p>
 
         <div>
-          <div class="d-flex">
+          <div class="d-flex" data-aos="fade-left" data-aos-delay="120">
           <div class="iconbox me-4">
             <i class="ri-home-heart-fill"></i>
           </div>
@@ -95,7 +96,7 @@
         </div>
 
         <div>
-          <div class="d-flex">
+          <div class="d-flex" data-aos="fade-left" data-aos-delay="120">
           <div class="iconbox me-4">
             <i class="ri-sparkling-2-fill"></i>
           </div>
@@ -106,7 +107,7 @@
         </div>
 
         <div>
-          <div class="d-flex">
+          <div class="d-flex" data-aos="fade-left" data-aos-delay="120">
           <div class="iconbox me-4">
             <i class="ri-twitter-fill"></i>
           </div>
@@ -127,7 +128,7 @@
     </section>
 
 
-    <section id="papagaji"class="p-5 mb-5 pt-lg-6">  
+    <section id="papagaji"class="p-5 mb-5 pt-lg-6" data-aos="fade-right" data-aos-delay="200">  
       
     <div class="container">
       <div class="row">
@@ -206,48 +207,48 @@
 
     </section>  
 
-    <section id="counter" class="section-padding text-light mb-5">
-    <div class="container text-center">
+    <section id="counter" class="section-padding text-light mb-5" >
+    <div class="container text-center" data-aos="fade-right" data-aos-delay="120">
       <div class="row g-3">
         <div class="section-title">
         <h1 class="display-4 text-uppercase fw-semibold mt-lg-5">Imamo</h1>
         <div class="line"></div>
       </div>
-        <div class="col-lg-4 col-sm-8  mb-4 ">
+        <div class="col-lg-4 col-md-12 col-sm-8  mb-4 ">
           <h1 class="display-5 zelena">26</h1>
           <h6 class="text-uppercase mt-3 fs-5 ">tigrica</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4">
           <h1 class="display-5 zelena">18</h1>
           <h6 class="text-uppercase mt-3 fs-5">Ninfi</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4">
           <h1 class="display-5 zelena">24</h1>
           <h6 class="text-uppercase mt-3 fs-5">Kozica</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4 ">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4 ">
           <h1 class="display-5 zelena">12</h1>
           <h6 class="text-uppercase mt-3 fs-5">Pevajućih</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4 ">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4 ">
           <h1 class="display-5 zelena">10</h1>
           <h6 class="text-uppercase mt-3 fs-5">Rozenkolisa</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4 ">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4 ">
           <h1 class="display-5 zelena">8</h1>
           <h6 class="text-uppercase mt-3 fs-5">Crvenokrilih</h6>
         </div>
 
 
-        <div class="col-lg-4 col-sm-8 mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4">
           <h1 class="display-5 zelena">6</h1>
           <h6 class="text-uppercase mt-3 fs-5">Godina Iskustva</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4">
           <h1 class="display-5 zelena">58</h1>
           <h6 class="text-uppercase mt-3 fs-5">Zadovoljnih Kupaca</h6>
         </div>
-        <div class="col-lg-4 col-sm-8 mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-8 mb-4">
           <h1 class="display-5 zelena">6</h1>
           <h6 class="text-uppercase mt-3 fs-5">Vrsta Papagaja</h6>
         </div>
@@ -257,7 +258,7 @@
     </section>
 
 
-    <section id="galerija" class="section-padding">
+    <section id="galerija" class="section-padding" data-aos="fade-right" data-aos-delay="120">
       <div class="container">
         <div class="row ">
           <div class="col-12">
@@ -385,7 +386,7 @@
     </section>
 
     <section id="kontakt" class="section-padding mb-5 pb-5 text-white">
-      <div class="container pt-4 pb-5">
+      <div class="container pt-4 pb-5" data-aos="fade-down" data-aos-delay="120">
         <div class="row ">
           <div class="col-12">
             <div class="section-title text-center">
@@ -398,24 +399,24 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <form action="#" class="row g-3 p-lg-5 p-4 pt-2 bg-white shadow">
+            <form onsubmit="sendEmail(); reset(); return false;" class="row g-3 p-lg-5 p-4 pt-2 bg-white shadow">
               <div class="form-group col-lg-6">
-                <input type="text"class="form-control" placeholder="Unesi Ime">
+                <input type="text"class="form-control" id="ime" required placeholder="Unesi Ime">
               </div>
               <div class="form-group col-lg-6">
-                <input type="text"class="form-control" placeholder="Unesi Prezime">
+                <input type="text"class="form-control"id="prezime" required placeholder="Unesi Prezime">
               </div>
               <div class="form-group col-lg-12">
-                <input type="email"class="form-control" placeholder="Unesi Email">
+                <input type="email"class="form-control" id="email" required placeholder="Unesi Email">
               </div>
               <div class="form-group col-lg-12">
-                <input type="text"class="form-control" placeholder="Naslov">
+                <input type="text"class="form-control" id="naslov" required placeholder="Naslov">
               </div>
               <div class="form-group col-lg-12">
-                <textarea name="poruka" rows="5" class="form-control" placeholder="Poruka"></textarea>
+                <textarea name="poruka" rows="5" id="poruka" required class="form-control" placeholder="Poruka"></textarea>
               </div>
               <div class="form-group col-lg-12 d-grid">
-                <button class="btn btn-brand">Posalji Poruku</button>
+                <button type="submit" class="btn btn-brand">Posalji Poruku</button>
               </div>
             </form>
           </div>
@@ -425,7 +426,7 @@
       </div>
     </section>
 
-    <footer class="bg-dark ">
+    <footer class="bg-dark " data-aos="fade-up" data-aos-delay="120">
       <div class="footer-top">
         <div class="container">
         <div class="row gy-5">
@@ -472,7 +473,7 @@
               <ul>
                 <li>Subotica, RS 24000</li>
                 <li>064-199-8116</li>
-                <li>www.odgajivacnica.com</li>
+                <li><a href="#kontakt">www.odgajivacnica.great-site.net</a></li>
                
 
               </ul>
@@ -499,7 +500,13 @@
 
 
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="scroll.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="email.js"></script>
+
 </body>
 </html>
